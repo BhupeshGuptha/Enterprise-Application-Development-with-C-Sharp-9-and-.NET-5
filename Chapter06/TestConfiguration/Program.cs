@@ -49,7 +49,7 @@ namespace TestConfiguration
                     optional: true,
                     reloadOnChange: true);
 
-                    //Custom SQL Configuration provider
+                    //Custom SQL Configuration provider. You need to update connection and query before running the solution. Query can be a simple select statement to fetch key values
                     config.AddSql("Connection string", "Query");
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
